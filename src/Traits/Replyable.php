@@ -1,8 +1,8 @@
 <?php
 
-namespace Dacastro4\LaravelGmail\Traits;
+namespace CoreSmart\LaravelGmail\Traits;
 
-use Dacastro4\LaravelGmail\Services\Message\Mail;
+use CoreSmart\LaravelGmail\Services\Message\Mail;
 use Google_Service_Gmail;
 use Google_Service_Gmail_Message;
 use Symfony\Component\Mime\Address;
@@ -408,7 +408,7 @@ trait Replyable
 			->subject($this->subject)
 			->html($this->message)
 			->priority($this->priority);
-		
+
 		// Fixes the issue: "An address can be an instance of Address or a string ("null" given)."
 		if(isset($this->cc)){
             $this->symfonyEmail->cc($this->returnCopies($this->cc));

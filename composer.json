@@ -39,21 +39,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Dacastro4\\LaravelGmail\\": "src/"
+            "CoreSmart\\LaravelGmail\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dacastro4\\LaravelGmail\\Tests\\": "tests/"
+            "CoreSmart\\LaravelGmail\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Dacastro4\\LaravelGmail\\LaravelGmailServiceProvider"
+                "CoreSmart\\LaravelGmail\\LaravelGmailServiceProvider"
             ],
             "aliases": {
-                "LaravelGmail": "Dacastro4\\LaravelGmail\\Facade\\LaravelGmail"
+                "LaravelGmail": "CoreSmart\\LaravelGmail\\Facade\\LaravelGmail"
             }
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dacastro4\LaravelGmail\Traits;
+namespace CoreSmart\LaravelGmail\Traits;
 
 use Illuminate\Support\Arr;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Dacastro4\LaravelGmail\Services;
+namespace CoreSmart\LaravelGmail\Services;
 
-use Dacastro4\LaravelGmail\LaravelGmailClass;
-use Dacastro4\LaravelGmail\Services\Message\Mail;
-use Dacastro4\LaravelGmail\Traits\Filterable;
-use Dacastro4\LaravelGmail\Traits\SendsParameters;
+use CoreSmart\LaravelGmail\LaravelGmailClass;
+use CoreSmart\LaravelGmail\Services\Message\Mail;
+use CoreSmart\LaravelGmail\Traits\Filterable;
+use CoreSmart\LaravelGmail\Traits\SendsParameters;
 use Google_Service_Gmail;
 
 class Message

@@ -1,6 +1,6 @@
 <?php
 
-use Dacastro4\LaravelGmail\Services\Message\Mail;
+use CoreSmart\LaravelGmail\Services\Message\Mail;
 use Illuminate\Container\Container;
 use Illuminate\Mail\Markdown;
 use Tests\TestCase;
@@ -20,10 +20,10 @@ class LaravelGmailTest extends TestCase
             'sample-markdown',
             [ 'url' => 'https://www.google.com' ]
         );
-        
+
         // trigger
         (new Mail())->markdown(
-            'sample-markdown', 
+            'sample-markdown',
             [ 'url' => 'https://www.google.com' ]
         );
     }
