@@ -1,10 +1,11 @@
 {
-    "name": "dacastro4/laravel-gmail",
-    "description": "Gmail API package for Laravel",
+    "name": "coresmart/laravel-gmail",
+    "description": "Gmail API package for Laravel (Laravel 12 compatible fork)",
     "keywords": [
         "api",
         "laravel",
-        "Gmail"
+        "Gmail",
+        "laravel-12"
     ],
     "license": "MIT",
     "authors": [
@@ -12,25 +13,29 @@
             "name": "Daniel Castro",
             "email": "danielcastro04@gmail.com",
             "homepage": "https://danielcastro.dev"
+        },
+        {
+            "name": "Your Name",
+            "email": "your@email.com",
+            "role": "Maintainer"
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "google/apiclient": "^v2.12.6",
-        "illuminate/auth": "~5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-        "illuminate/config": "~5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-        "illuminate/database": "~5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-        "illuminate/routing": "~5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-        "illuminate/session": "~5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-        "illuminate/support": "~5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-        "symfony/mime": "^5.4|^6.0|^7.0",
+        "php": "^8.2|^8.3",
+        "google/apiclient": "^v2.15",
+        "illuminate/auth": "^11.0|^12.0",
+        "illuminate/config": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/routing": "^11.0|^12.0",
+        "illuminate/session": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0",
+        "symfony/mime": "^6.0|^7.0",
         "ext-json": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.3|^10.5",
-        "mockery/mockery": "^1.0",
-        "squizlabs/php_codesniffer": "~3.4",
-        "orchestra/testbench": "^v4.18.0|^v5.20.0|^v6.25.0|^8.0|^9.0"
+        "phpunit/phpunit": "^10.0|^11.0",
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^9.0"
     },
     "autoload": {
         "psr-4": {
@@ -39,7 +44,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Dacastro4\\LaravelGmail\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -51,11 +56,6 @@
                 "LaravelGmail": "Dacastro4\\LaravelGmail\\Facade\\LaravelGmail"
             }
         }
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true
